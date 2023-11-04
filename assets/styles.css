@@ -1,7 +1,51 @@
-html {
-  scroll-behavior: smooth;
+/* ********** Custom properties: CSS Variables  ********** */
+:root {
 }
 
-body {
-  font-family: sans-serif;
+/* ********** Reset  ********** */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  box-shadow: inset 0 -2px 0 var(--orange);
+  opacity: 0.8;
+}
+
+blockquote {
+  padding: 0.5rem 1.5rem;
+  border-left: 1px solid var(--dark);
+  opacity: 0.75;
+}
+
+/* ********** Components: header, card, etc  ********** */
+
+/* ********** Utilities> un aregla que modifica un atributo/propiedad de css  ********** */
+
+/* ********** Site Styles  ********** */

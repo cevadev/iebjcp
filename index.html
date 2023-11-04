@@ -14,14 +14,19 @@
   </head>
   <body>
     <header class="header">
-      <figure class="header__logo">
+      <figure class="header">
         <img
+          class="header__logo"
           src="./assets/images/logo.png"
           alt="logotipo de la iglesia evangelica bautista en José C. Paz"
         />
       </figure>
-      <figure class="header__hero">
-        <img src="./assets/images/header.jpg" alt="vista interior del templo" />
+      <figure class="header">
+        <img
+          src="./assets/images/header.jpg"
+          class="header__hero"
+          alt="vista interior del templo"
+        />
       </figure>
       <h1>
         Iglesia evangélica bautista <br />
@@ -30,39 +35,49 @@
       <br />
       <address>José C. Paz 1295 - José C. Paz</address>
     </header>
-    <nav>
-      <ul>
-        <a href="./sermones.html"><li>Sermones</li></a>
-        <li>Artículos</li>
-        <a href="./index.html#informacion"><li>Acerca de la iglesia</li></a>
+    <nav class="navbar">
+      <ul class="navbar">
+        <a href="./sermones.html">
+          <li class="navbar__item">Sermones</li>
+        </a>
+        <li class="navbar__item navbar__item--gray">Artículos</li>
+        <a href="./index.html#informacion">
+          <li class="navbar__item">Acerca de la iglesia</li></a
+        >
         <a
           href="https://www.facebook.com/profile.php?id=100066846711551"
           target="_blank"
           rel="nofollow"
-          ><li>Facebook</li></a
         >
+          <li class="navbar__item">Facebook</li>
+        </a>
       </ul>
     </nav>
-    <div><h2>Mira en vivo la transmisión</h2></div>
+    <div class="live">
+      <h2 class="lieve__text on off">Mira en vivo la transmisión</h2>
+    </div>
     <main>
-      <section>
-        <h2>Bienvenidos</h2>
-        <p>
+      <section class="main">
+        <h2 class="main__text main__text--primary">Bienvenidos</h2>
+        <p class="main__text main__text--secondary">
           Te deseamos lo mejor para tu vida y que Dios te bendiga siempre.
           ¿Estás leyendo esto? No es casualidad. Jesús quiere lo mejor de lo
           mejor para vos y está esperando que le abras tu corazón y que confíes
           en Él.
         </p>
       </section>
-      <section id="informacion">
-        <article><h3>Sobre nosotros</h3></article>
-        <article><h3>Sermones</h3></article>
+      <section class="info">
+        <section>
+          <h2 class="info__title info__title--primary">Palabras del pastor</h2>
+        </section>
+        <section>
+          <h2 class="info__title info__title--primary">Sobre nosotros</h2>
+        </section>
+        <section>
+          <h2 class="info__title info__title--primary">Sermones</h2>
+        </section>
       </section>
-      <aside class="sidebar">
-        <section><h3>Palabras del pastor</h3></section>
-      </aside>
     </main>
-    <aside></aside>
     <footer>
       <span id="footText"></span>
     </footer>

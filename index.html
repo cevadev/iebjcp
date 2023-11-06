@@ -21,6 +21,21 @@
           alt="logotipo de la iglesia evangelica bautista en José C. Paz"
         />
       </figure>
+      <nav class="navbar">
+        <ul>
+          <a href="./index.html#informacion"> Acerca de la iglesia</a>
+          <a href="./sermones.html"> Para vos </a>
+          <a href="./comollegar.html"> Como llegar </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100066846711551"
+            target="_blank"
+            rel="nofollow"
+          >
+            Facebook
+          </a>
+          <a href="">En vivo</a>
+        </ul>
+      </nav>
       <figure class="header">
         <img
           src="./assets/images/header.jpg"
@@ -28,31 +43,13 @@
           alt="vista interior del templo"
         />
       </figure>
-      <h1>
+      <h1 class="header__title">
         Iglesia evangélica bautista <br />
         José C. Paz
       </h1>
       <br />
-      <address>José C. Paz 1295 - José C. Paz</address>
+      <address class="header__address">José C. Paz 1295 - José C. Paz</address>
     </header>
-    <nav class="navbar">
-      <ul class="navbar">
-        <a href="./sermones.html">
-          <li class="navbar__item">Sermones</li>
-        </a>
-        <li class="navbar__item navbar__item--gray">Artículos</li>
-        <a href="./index.html#informacion">
-          <li class="navbar__item">Acerca de la iglesia</li></a
-        >
-        <a
-          href="https://www.facebook.com/profile.php?id=100066846711551"
-          target="_blank"
-          rel="nofollow"
-        >
-          <li class="navbar__item">Facebook</li>
-        </a>
-      </ul>
-    </nav>
     <div class="live">
       <h2 class="lieve__text on off">Mira en vivo la transmisión</h2>
     </div>
@@ -69,6 +66,12 @@
       <section class="info">
         <section>
           <h2 class="info__title info__title--primary">Palabras del pastor</h2>
+          <video
+            src="./assets/media/presentacion.mp4"
+            controls
+            preload="auto"
+            poster="./assets/images/header.jpg"
+          ></video>
         </section>
         <section>
           <h2 class="info__title info__title--primary">Sobre nosotros</h2>
@@ -76,9 +79,29 @@
         <section>
           <h2 class="info__title info__title--primary">Sermones</h2>
         </section>
+        <section>
+          <h2 class="info__title info__title--primary">Ministerios</h2>
+        </section>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <nav class="footer__navbar">
+        <ul>
+          <a href="./index.html#informacion">
+            <li class="footer__item">Acerca de la iglesia</li></a
+          >
+          <a href="./sermones.html">
+            <li class="footer__item">Para vos</li>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100066846711551"
+            target="_blank"
+            rel="nofollow"
+          >
+            <li class="footer__item">Facebook</li>
+          </a>
+        </ul>
+      </nav>
       <span id="footText"></span>
     </footer>
     <script src="./js/index.js" type="module"></script>

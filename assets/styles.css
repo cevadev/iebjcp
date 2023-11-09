@@ -178,13 +178,36 @@ video {
 
 /* ********** Components: header, card, etc  ********** */
 /* Header */
-.header h1 {
-  color: var(--gray100);
+.header {
+  display: flex;
 }
 
 .header__logo {
-  width: 80px;
+  width: 70px;
   height: 45px;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+.hero address {
+  text-align: center;
+}
+
+/* Seccion Info */
+.info {
+  display: flex;
+}
+
+.info article {
+  align-items: center;
+}
+
+.info video {
+  width: 70%;
+  height: calc((100vw - 2rem) * (9 / 16));
+  max-height: calc(800px * 9 / 16);
 }
 
 /* ********** Utilities> una regla que modifica un atributo/propiedad de css  ********** */

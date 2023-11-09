@@ -3,5 +3,6 @@ const doc = document;
 import printFootText from "./dom/footer-text.js";
 
 doc.addEventListener("DOMContentLoaded", (e) => {
-  printFootText("hecho con amor por ceva");
+  const msg = "Hecho con ❤️ por CEVA®️";
+  printFootText(msg);
 });

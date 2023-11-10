@@ -89,23 +89,31 @@
 
 /* ********** Custom properties: CSS Variables  ********** */
 :root {
-  --dark: #1f1f1f;
-  --always-dark: #1f1f1f;
-  --white: #ffffff;
-  --gray10: #f4f4f4;
-  --gray90: #262626;
-  --gray100: #161616;
+  /*--first-color: #d90062;*/
+  --first-color: #0085ff;
+  /*--first-alpha-color: rgba(217, 0, 98, 0.75);*/
+  --first-alpha-color: rgba(0, 133, 255, 0.75);
+  --second-color: #14192d;
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: #501464;
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
 
-  --adicionalDark: #273b47;
-  --adicionalGray: #7e96a5;
-  --adicionalWhite: #f3f8fb;
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
 
-  --primario: #98ca3f;
-  --secundario: #0791e6;
-  --text-color: #333;
-  --always-text-color: #333;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
 
-  --font: "Raleway";
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+
+  --font: "Raleway", sans-serif;
+  --max-width: 1200px; /*maxima anchura del sitio web*/
+  --header-height: 4rem; /* alto de la cabecera de 64px*/
   --container-lg: 1200px;
   --container-md: 992px;
   --container-sm: 780px;
@@ -121,6 +129,8 @@
 /* ********** Reset  ********** */
 html {
   box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px; /*1 rem*/
   scroll-behavior: smooth;
 }
 *,
@@ -132,9 +142,9 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100vh;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
   text-rendering: optimizeSpeed;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
@@ -144,18 +154,19 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 a {
-  color: var(--dark);
+  color: var(--link-color);
   text-decoration: none;
   transition: all 0.3s ease-out;
 }
 
 a:hover {
-  color: var(--primario);
+  color: var(--gray-dark-color);
   box-shadow: inset 0 -2px 0 var(--primario);
   opacity: 0.8;
 }
-li {
-  list-style: none;
+
+address {
+  margin: 0;
 }
 
 blockquote {
@@ -164,9 +175,47 @@ blockquote {
   opacity: 0.75;
 }
 
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.6; /*interlineado*/
 }
 
 iframe,
@@ -178,31 +227,6 @@ video {
 
 /* ********** Components: header, card, etc  ********** */
 /* Header */
-.header {
-  display: flex;
-}
-
-.header__logo {
-  width: 70px;
-  height: 45px;
-}
-
-.hero h1 {
-  text-align: center;
-}
-
-.hero address {
-  text-align: center;
-}
-
-/* Seccion Info */
-.info {
-  display: flex;
-}
-
-.info article {
-  align-items: center;
-}
 
 .info video {
   width: 70%;
@@ -211,5 +235,9 @@ video {
 }
 
 /* ********** Utilities> una regla que modifica un atributo/propiedad de css  ********** */
+
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
 
 /* ********** Site Styles  ********** */

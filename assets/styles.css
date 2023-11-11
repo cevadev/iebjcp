@@ -278,6 +278,33 @@ video {
   background-color: var(--first-color);
 }
 
+/* Media query para el componente menu: Cuando el dispositivo sea una pantalla y cuando la minima anchura sea 1024px*/
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu a {
+    padding: 0 1rem;
+  }
+
+  .menu a:last-child {
+    padding-right: 0;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+  }
+}
+
 /* ********** Utilities> una regla que modifica un atributo/propiedad de css  ********** */
 
 .box-shadow-1 {
@@ -322,4 +349,17 @@ video {
 .logo img {
   width: 2rem;
   height: 2rem;
+}
+
+/* Media query: Cuando el dispositivo sea pantalla y con una minima anchura de 768px*/
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    height: calc(var(--header-height) - 0.7rem);
+  }
 }

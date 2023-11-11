@@ -19,11 +19,36 @@
   <body>
     <header class="header">
       <section class="container">
-        <img
-          src="./assets/images/logo.png"
-          alt="logotipo de la iglesia evangelica bautista en José C. Paz"
-        />
-        <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo.png"
+              alt="logotipo de la iglesia evangelica bautista en José C. Paz"
+            />
+          </a>
+        </div>
+        <button class="menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="none"
+          >
+            <path
+              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+            />
+          </svg>
+        </button>
+        <nav class="menu">
           <a href="./index.html#nosotros"> Acerca de la iglesia</a>
           <a href="./sermones.html"> Para vos </a>
           <a href="./comollegar.html"> Como llegar </a>
@@ -47,6 +72,7 @@
     <main>
       <section id="nosotros" class="us">
         <h2>Sobre la iglesia</h2>
+
         <div class="container">
           <a href="">Carta del pastor</a>
           <a href="">Nuestra historia</a>
@@ -56,8 +82,13 @@
       </section>
     </main>
     <footer class="footer">
-      <span id="footText"></span>
+      <small
+        >Sitio diseñado con ❤️ por
+        <a href="https://twitter.com/harpazos" target="_blank" rel="noopener"
+          >CEVA</a
+        ></small
+      >
     </footer>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
